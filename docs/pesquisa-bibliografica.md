@@ -221,3 +221,9 @@ Representa o **estado da arte de produtos IoT embarcados multi-sensor**, onde o 
 **[A3]** KAIRUZ-CABRERA, David et al. Development of a Unified IoT Platform for Assessing Meteorological and Air Quality Data in a Tropical Environment. **Sensors**, v. 24, n. 9, art. 2729, abr. 2024. DOI: [10.3390/s24092729](https://doi.org/10.3390/s24092729). Disponível em: https://www.mdpi.com/1424-8220/24/9/2729.
 
 **[A4]** NAING, Aung Min; AL-HAMID, Duaa Zuhair; SINGH, Anuradha. An Integrated IoT-Based Multi-Sensor Framework for Real-Time Indoor Environment and Safety Monitoring. **Sensors**, v. 26, n. 12, art. 3702, jun. 2026. DOI: [10.3390/s26123702](https://doi.org/10.3390/s26123702). Disponível em: https://www.mdpi.com/1424-8220/26/12/3702.
+
+---
+
+| Versão | Autor | Data |
+| --- | --- | --- |
+| 0.1 | [Kaio Macedo](https://github.com/bigkaio) | 25/06/2026 |
