@@ -97,7 +97,7 @@ Documenta precisamente a cadeia tecnológica completa: **sensor → ESP32-C6 →
 
 ---
 
-## 4.2 Artigos sobre Aplicação / Uso do Produto
+## 4.2 Artigos sobre Aplicação / Uso do Produto (Irrigação Inteligente e Uso em Campo)
 
 ---
 
@@ -105,21 +105,21 @@ Documenta precisamente a cadeia tecnológica completa: **sensor → ESP32-C6 →
 
 | Campo | Informação |
 |-------|-----------|
-| **Título** | [Monitoring System for Operating Variables in Incubators in the Neonatology Service of a Highly Complex Hospital through the Internet of Things (IoT)](https://www.mdpi.com/1424-8220/23/12/5719) |
-| **Autores** | Pedro Antonio Aya-Parra; Andres Jacob Rodriguez-Orjuela; Viviana Rodriguez Torres; Nidia Patricia Cordoba Hernandez; Natalia Martinez Castellanos; Jefferson Sarmiento-Rojas |
-| **Revista** | *Sensors* (MDPI), Vol. 23, Issue 12, Art. 5719, Jun. 2023 |
-| **DOI** | [10.3390/s23125719](https://doi.org/10.3390/s23125719) |
-| **Link direto** | https://www.mdpi.com/1424-8220/23/12/5719 |
+| **Título** | [Internet of Things (IoT)-Based Smart Agriculture Irrigation and Monitoring System Using Ubidots Server](https://www.mdpi.com/2673-4591/82/1/99 ) |
+| **Autores** | Mohammad Mohiuddin; Md. Saiful Islam; Shaila Shanjida |
+| **Revista** | *Engineering Proceedings* (MDPI), Vol. 82, Issue 1, Art. 99, 2024 |
+| **DOI** | [10.3390/ecsa-11-20528](https://doi.org/10.3390/ecsa-11-20528 ) |
+| **Link direto** | https://www.mdpi.com/2673-4591/82/1/99 |
 | **Base** | MDPI — Open Access |
-| **Citações** | 9 (Scopus) |
+| **Citações** | 14 |
 
 #### Resumo
 
-O trabalho descreve o desenvolvimento e a implementação de um sistema IoT para monitoramento de **temperatura, umidade e ruído** em incubadoras neonatais de um hospital universitário na Colômbia. O hardware consiste em um **ESP32-C3** como microcontrolador, sensor **SHT31** de temperatura/umidade (precisão de 1,5% UR; resolução de 0,2 °C) e microfone MEMS ADMP401. Os dados são coletados a cada 5 minutos e transmitidos via Wi-Fi ao broker **EMQX** usando o **protocolo MQTT**. Uma aplicação web progressiva (PWA chamada *SiMCa-Bio*) permite acesso em tempo real, geração de alertas e registro histórico. O teste piloto de 4 meses demonstrou erro relativo de apenas **4,2% na umidade**, dentro dos limites da norma ISO/IEC 17025.
+O artigo propõe um sistema de irrigação inteligente baseado em IoT para agricultura, utilizando o microcontrolador **ESP32** integrado a sensores de umidade do solo, temperatura, umidade do ar (DHT11 ) e detecção de chuva. Os dados são transmitidos via Wi-Fi para o servidor **Ubidots**, onde são processados e comparados com limiares predefinidos. O sistema automatiza a ativação de bombas d'água via relés quando a umidade do solo cai abaixo do nível crítico, permitindo também o controle manual remoto pelo agricultor via dashboard web ou mobile.
 
 #### Relevância para Sistemas Embarcados
 
-Caso de uso real de produto IoT baseado em **ESP32 + sensor de umidade + MQTT** em contexto hospitalar de alta criticidade. O artigo valida experimentalmente os limites de precisão dos sensores SHT31 e a robustez do protocolo MQTT em ambientes clínicos com requisitos rigorosos de confiabilidade e rastreabilidade de dados.
+Demonstra a aplicação prática do **ESP32 em ambientes agrícolas**, validando sua capacidade de gerenciar múltiplos sensores e atuar sobre o hardware (bombas) em tempo real. O uso de protocolos como **HTTP/MQTT** para comunicação com servidores de nuvem (Ubidots) reforça a viabilidade de soluções de baixo custo para monitoramento e automação de campo.
 
 ---
 
@@ -127,21 +127,21 @@ Caso de uso real de produto IoT baseado em **ESP32 + sensor de umidade + MQTT** 
 
 | Campo | Informação |
 |-------|-----------|
-| **Título** | [Deep Learning-Based IoT System for Remote Monitoring and Early Detection of Health Issues in Real-Time](https://www.mdpi.com/1424-8220/23/11/5204) |
-| **Autores** | Md. Reazul Islam; Md. Mohsin Kabir; Muhammad Firoz Mridha; Sultan Alfarhood; Mejdl Safran; Dunren Che |
-| **Revista** | *Sensors* (MDPI), Vol. 23, Issue 11, Art. 5204, Mai. 2023 |
-| **DOI** | [10.3390/s23115204](https://doi.org/10.3390/s23115204) |
-| **Link direto** | https://www.mdpi.com/1424-8220/23/11/5204 |
+| **Título** | [Research and Development of an IoT Smart Irrigation System for Farmland Based on LoRa and Edge Computing](https://www.mdpi.com/2073-4395/15/2/366 ) |
+| **Autores** | Li-Li Zhangzhong; Hao-Ran Gao; Wen-An Zheng; Guang-Fei Chen |
+| **Revista** | *Agronomy* (MDPI), Vol. 15, Issue 2, Art. 366, 2025 |
+| **DOI** | [10.3390/agronomy15020366](https://doi.org/10.3390/agronomy15020366 ) |
+| **Link direto** | https://www.mdpi.com/2073-4395/15/2/366 |
 | **Base** | MDPI — Open Access |
-| **Citações** | 161 |
+| **Citações** | - |
 
 #### Resumo
 
-Este artigo propõe um sistema IoT para monitoramento remoto de saúde e detecção precoce de doenças em ambiente domiciliar. O sistema integra sensores de oximetria (MAX30100), ECG (AD8232) e temperatura corporal (MLX90614). Os dados são transmitidos a um servidor via **protocolo MQTT**, onde um modelo de *deep learning* baseado em CNN com camada de atenção classifica potenciais condições cardíacas em 5 categorias e detecta febre. O sistema conecta automaticamente o usuário ao médico mais próximo ao detectar anomalias críticas. Com **161 citações**, é um dos trabalhos mais impactantes na área de IoMT (*Internet of Medical Things*).
+Este trabalho desenvolve um sistema de irrigação inteligente para grandes áreas agrícolas utilizando comunicação **LoRa** e **Edge Computing**. A arquitetura utiliza nós sensores para coletar dados de umidade e temperatura, enviando-os a um gateway que executa um algoritmo de decisão baseado na fórmula de Penman-Monteith modificada e na equação de balanço hídrico. Os testes de campo demonstraram uma cobertura de comunicação de até 4 km com taxa de perda de pacotes zero em 3,5 km, garantindo irrigação precisa adaptada às características do solo e estágios de crescimento da cultura (trigo ).
 
 #### Relevância para Sistemas Embarcados
 
-Demonstra a aplicação do **protocolo MQTT em sistemas embarcados para saúde**, onde a leveza e o modelo pub/sub são essenciais para a transmissão contínua e confiável de dados de múltiplos sensores em dispositivos com recursos computacionais limitados. Reforça que o MQTT é o protocolo de fato para sistemas embarcados IoT que exigem baixa latência e baixo consumo de banda.
+Valida o uso de tecnologias de longo alcance (**LoRa**) integradas a sistemas embarcados para superar as limitações de distância em aplicações rurais. O artigo destaca a importância do **processamento na borda (Edge Computing)** para reduzir a latência e otimizar o consumo de água, fornecendo uma base sólida para o desenvolvimento de gateways IoT robustos.
 
 ---
 
@@ -149,21 +149,21 @@ Demonstra a aplicação do **protocolo MQTT em sistemas embarcados para saúde**
 
 | Campo | Informação |
 |-------|-----------|
-| **Título** | [Development of a Unified IoT Platform for Assessing Meteorological and Air Quality Data in a Tropical Environment](https://www.mdpi.com/1424-8220/24/9/2729) |
-| **Autores** | David Kairuz-Cabrera; Victor Hernandez-Rodriguez; Olivier Schalm; Alain Martinez; Pedro Merino Laso; Daniellys Alejo-Sánchez |
-| **Revista** | *Sensors* (MDPI), Vol. 24, Issue 9, Art. 2729, Abr. 2024 |
-| **DOI** | [10.3390/s24092729](https://doi.org/10.3390/s24092729) |
-| **Link direto** | https://www.mdpi.com/1424-8220/24/9/2729 |
+| **Título** | [Sustainable Irrigation System for Farming Supported by Machine Learning and Real-Time Sensor Data](https://www.mdpi.com/1424-8220/21/9/3079 ) |
+| **Autores** | Abel Glória; João Cardoso; Pedro Sebastião |
+| **Revista** | *Sensors* (MDPI), Vol. 21, Issue 9, Art. 3079, 2021 |
+| **DOI** | [10.3390/s21093079](https://doi.org/10.3390/s21093079 ) |
+| **Link direto** | https://www.mdpi.com/1424-8220/21/9/3079 |
 | **Base** | MDPI — Open Access |
-| **Citações** | 8 |
+| **Citações** | 105 |
 
 #### Resumo
 
-O trabalho apresenta uma plataforma IoT unificada de baixo custo para monitoramento de poluentes atmosféricos e parâmetros meteorológicos — incluindo **temperatura e umidade relativa** — em ambiente tropical (Cuba). A arquitetura combina sensores Alphasense, comunicação **LoRa**, **protocolo MQTT**, Node-RED, InfluxDB e Grafana. Uma campanha de campo de 15 dias validou o sistema contra o equipamento de referência Libelium Smart Environment Pro, demonstrando resultados confiáveis com custo várias vezes inferior, aplicável a políticas de saúde pública em nações em desenvolvimento.
+O artigo apresenta um sistema de irrigação sustentável que combina dados de sensores em tempo real com modelos de **Machine Learning**. Utilizando o microcontrolador **ESP32**, o sistema coleta dados de umidade do solo e parâmetros meteorológicos, transmitindo-os via **LoRa e MQTT** para um servidor central. Um modelo de regressão prevê a necessidade de água para as próximas 24 horas, otimizando o agendamento da irrigação. O trabalho foca na eficiência energética, utilizando o modo *deep sleep* do ESP32 para prolongar a vida útil da bateria em dispositivos de campo.
 
 #### Relevância para Sistemas Embarcados
 
-Valida a cadeia tecnológica típica de produtos IoT em campo: **sensores (incluindo umidade) → microcontrolador → MQTT → banco de dados → dashboard**. Demonstra que esta arquitetura é robusta e aplicável em condições ambientais adversas, com avaliação quantitativa de desempenho em comparação a instrumentação de referência profissional.
+Explora técnicas avançadas de **gerenciamento de energia em sistemas embarcados** (ESP32 ), essenciais para dispositivos alimentados por bateria em campo. Além disso, demonstra a integração de protocolos de comunicação híbridos (**MQTT sobre LoRa**) para garantir a entrega confiável de dados em arquiteturas IoT agrícolas.
 
 ---
 
@@ -171,23 +171,23 @@ Valida a cadeia tecnológica típica de produtos IoT em campo: **sensores (inclu
 
 | Campo | Informação |
 |-------|-----------|
-| **Título** | [An Integrated IoT-Based Multi-Sensor Framework for Real-Time Indoor Environment and Safety Monitoring](https://www.mdpi.com/1424-8220/26/12/3702) |
-| **Autores** | Aung Min Naing; Duaa Zuhair Al-Hamid; Anuradha Singh |
-| **Revista** | *Sensors* (MDPI), Vol. 26, Issue 12, Art. 3702, Jun. 2026 |
-| **DOI** | [10.3390/s26123702](https://doi.org/10.3390/s26123702) |
-| **Link direto** | https://www.mdpi.com/1424-8220/26/12/3702 |
+| **Título** | [Smart & Green: An Internet-of-Things Framework for Smart Irrigation](https://www.mdpi.com/1424-8220/20/1/190 ) |
+| **Autores** | Junior M. Talavera; Luis E. Tobón; J. A. Gómez; Maria A. Culman; et al. |
+| **Revista** | *Sensors* (MDPI), Vol. 20, Issue 1, Art. 190, 2020 |
+| **DOI** | [10.3390/s20010190](https://doi.org/10.3390/s20010190 ) |
+| **Link direto** | https://www.mdpi.com/1424-8220/20/1/190 |
 | **Base** | MDPI — Open Access |
-| **Seção** | Advanced IoT Systems in Smart Cities: 3rd Edition |
+| **Citações** | 120+ |
 
 #### Resumo
 
-Este artigo apresenta um *framework* IoT multi-sensorial integrado para monitoramento em tempo real da qualidade do ambiente interno e segurança em residências e pequenos edifícios inteligentes. O sistema integra múltiplos parâmetros ambientais — temperatura, **umidade**, qualidade do ar, ruído e presença — em um único dispositivo IoT de baixo custo. A comunicação entre os nós sensores e a nuvem é feita via **protocolo MQTT**, com geração de alertas em tempo real quando os parâmetros saem das faixas de segurança, contribuindo para o bem-estar dos ocupantes em ambientes *smart home* e *smart building*.
+O trabalho introduz o *framework* "Smart & Green", uma arquitetura IoT completa para gestão de irrigação inteligente. O sistema suporta múltiplos protocolos de comunicação, incluindo **MQTT e CoAP**, para integrar nós sensores de umidade e estações meteorológicas. O diferencial é a camada de serviço que permite a configuração personalizada de tipos de solo, culturas e sistemas de irrigação (ex: microaspersão ), além de algoritmos para detecção e remoção de *outliers* nos dados coletados, garantindo decisões de irrigação mais precisas e economia de água.
 
 #### Relevância para Sistemas Embarcados
 
-Representa o **estado da arte de produtos IoT embarcados multi-sensor**, onde o microcontrolador atua como hub de aquisição de múltiplos sensores (incluindo umidade), processamento local e comunicação via MQTT. Demonstra a maturidade e a relevância atual desta arquitetura para aplicações de *smart home* e *smart building*.
+Fornece um modelo de referência para a **arquitetura de software de sistemas IoT**, destacando a necessidade de interoperabilidade entre diferentes protocolos (**MQTT/CoAP**) e a importância do pré-processamento de dados diretamente nos dispositivos embarcados ou gateways para melhorar a confiabilidade do sistema final.
 
----
+
 
 ## 4.3 Síntese Geral
 
@@ -197,10 +197,10 @@ Representa o **estado da arte de produtos IoT embarcados multi-sensor**, onde o 
 | T2 | Cujilema et al., 2023 | Tecnologia Habilitadora | IEEE Latin America Trans. | ESP32, ESP-NOW, MQTT | [🔗](https://ieeexplore.ieee.org/document/10244182) |
 | T3 | Fawwaz et al., 2022 | Tecnologia Habilitadora | MDPI Sensors | MQTT, SDN, Edge Computing | [🔗](https://www.mdpi.com/1424-8220/22/9/3431) |
 | T4 | Mota et al., 2025 | Tecnologia Habilitadora | MDPI Sensors | ESP32-C6, MQTT, InfluxDB | [🔗](https://www.mdpi.com/1424-8220/25/6/1683) |
-| A1 | Aya-Parra et al., 2023 | Aplicação | MDPI Sensors | ESP32-C3, SHT31, MQTT, EMQX | [🔗](https://www.mdpi.com/1424-8220/23/12/5719) |
-| A2 | Islam et al., 2023 | Aplicação | MDPI Sensors | IoT, MQTT, Deep Learning, IoMT | [🔗](https://www.mdpi.com/1424-8220/23/11/5204) |
-| A3 | Kairuz-Cabrera et al., 2024 | Aplicação | MDPI Sensors | IoT, MQTT, LoRa, Umidade | [🔗](https://www.mdpi.com/1424-8220/24/9/2729) |
-| A4 | Naing et al., 2026 | Aplicação | MDPI Sensors | IoT, MQTT, Multi-sensor, Smart Home | [🔗](https://www.mdpi.com/1424-8220/26/12/3702) |
+| A1 | Mohiuddin et al., 2024 | Aplicação | Engineering Proc. | ESP32, DHT11, IoT, Ubidots | [🔗](https://www.mdpi.com/2673-4591/82/1/99 ) |
+| A2 | Zhangzhong et al., 2025 | Aplicação | Agronomy | LoRa, Edge Computing, Penman-Monteith | [🔗](https://www.mdpi.com/2073-4395/15/2/366 ) |
+| A3 | Glória et al., 2021 | Aplicação | Sensors | ESP32, LoRa, MQTT, Machine Learning | [🔗](https://www.mdpi.com/1424-8220/21/9/3079 ) |
+| A4 | Talavera et al., 2020 | Aplicação | Sensors | MQTT, CoAP, IoT Framework | [🔗](https://www.mdpi.com/1424-8220/20/1/190 ) |
 
 ---
 
@@ -214,16 +214,17 @@ Representa o **estado da arte de produtos IoT embarcados multi-sensor**, onde o 
 
 **[T4]** MOTA, Afonso et al. Implementation of an Internet of Things Architecture to Monitor Indoor Air Quality: A Case Study During Sleep Periods. **Sensors**, v. 25, n. 6, art. 1683, mar. 2025. DOI: [10.3390/s25061683](https://doi.org/10.3390/s25061683). Disponível em: https://www.mdpi.com/1424-8220/25/6/1683.
 
-**[A1]** AYA-PARRA, Pedro Antonio et al. Monitoring System for Operating Variables in Incubators in the Neonatology Service of a Highly Complex Hospital through the Internet of Things (IoT). **Sensors**, v. 23, n. 12, art. 5719, jun. 2023. DOI: [10.3390/s23125719](https://doi.org/10.3390/s23125719). Disponível em: https://www.mdpi.com/1424-8220/23/12/5719.
+**[A1]** MOHIUDDIN, Mohammad; ISLAM, Md. Saiful; SHANJIDA, Shaila. Internet of Things (IoT )-Based Smart Agriculture Irrigation and Monitoring System Using Ubidots Server. **Engineering Proceedings**, v. 82, n. 1, art. 99, 2024. DOI: [10.3390/ecsa-11-20528](https://doi.org/10.3390/ecsa-11-20528 ). Disponível em: https://www.mdpi.com/2673-4591/82/1/99.
 
-**[A2]** ISLAM, Md. Reazul et al. Deep Learning-Based IoT System for Remote Monitoring and Early Detection of Health Issues in Real-Time. **Sensors**, v. 23, n. 11, art. 5204, mai. 2023. DOI: [10.3390/s23115204](https://doi.org/10.3390/s23115204). Disponível em: https://www.mdpi.com/1424-8220/23/11/5204.
+**[A2]** ZHANGZHONG, Li-Li; GAO, Hao-Ran; ZHENG, Wen-An; CHEN, Guang-Fei. Research and Development of an IoT Smart Irrigation System for Farmland Based on LoRa and Edge Computing. **Agronomy**, v. 15, n. 2, art. 366, 2025. DOI: [10.3390/agronomy15020366](https://doi.org/10.3390/agronomy15020366 ). Disponível em: https://www.mdpi.com/2073-4395/15/2/366.
 
-**[A3]** KAIRUZ-CABRERA, David et al. Development of a Unified IoT Platform for Assessing Meteorological and Air Quality Data in a Tropical Environment. **Sensors**, v. 24, n. 9, art. 2729, abr. 2024. DOI: [10.3390/s24092729](https://doi.org/10.3390/s24092729). Disponível em: https://www.mdpi.com/1424-8220/24/9/2729.
+**[A3]** GLÓRIA, Abel; CARDOSO, João; SEBASTIÃO, Pedro. Sustainable Irrigation System for Farming Supported by Machine Learning and Real-Time Sensor Data. **Sensors**, v. 21, n. 9, art. 3079, 2021. DOI: [10.3390/s21093079](https://doi.org/10.3390/s21093079 ). Disponível em: https://www.mdpi.com/1424-8220/21/9/3079.
 
-**[A4]** NAING, Aung Min; AL-HAMID, Duaa Zuhair; SINGH, Anuradha. An Integrated IoT-Based Multi-Sensor Framework for Real-Time Indoor Environment and Safety Monitoring. **Sensors**, v. 26, n. 12, art. 3702, jun. 2026. DOI: [10.3390/s26123702](https://doi.org/10.3390/s26123702). Disponível em: https://www.mdpi.com/1424-8220/26/12/3702.
+**[A4]** TALAVERA, Junior M. et al. Smart & Green: An Internet-of-Things Framework for Smart Irrigation. **Sensors**, v. 20, n. 1, art. 190, 2020. DOI: [10.3390/s20010190](https://doi.org/10.3390/s20010190 ). Disponível em: https://www.mdpi.com/1424-8220/20/1/190.
 
 ---
 
 | Versão | Autor | Data |
 | --- | --- | --- |
-| 0.1 | [Kaio Macedo](https://github.com/bigkaio) | 25/06/2026 |
+| 0.1 (Artigos sobre Tecnologias Habilitadoras do Produto) | [Kaio Macedo](https://github.com/bigkaio) | 25/06/2026 |
+| 0.2 (Artigos sobre Aplicação / Uso do Produto (Irrigação Inteligente e Uso em Campo)) | [Maria Clara](https://github.com/alvezclari) | 25/06/2026 |
