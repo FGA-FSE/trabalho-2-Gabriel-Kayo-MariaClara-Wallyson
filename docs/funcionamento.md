@@ -20,11 +20,11 @@ flowchart LR
         level[Boia de nível do reservatório]
     end
 
-    Sensores --> ESP32[ESP32<br/>Aquisição de dados<br/>Lógica de controle<br/>Comunicação Wi-Fi]
+    Sensores --> ESP32["ESP32<br/>Aquisição de dados<br/>Lógica de controle<br/>Comunicação Wi-Fi"]
 
-    ESP32 --> Pump[Bomba de água 3–5 V<br/>Módulo relé/MOSFET]
-    ESP32 --> Telegram[Bot Telegram<br/>Alertas e comandos]
-    ESP32 --> Web[Servidor HTTP no ESP32<br/>Dashboard web de telemetria]
+    ESP32 --> Pump["Bomba de água 3–5 V<br/>Módulo relé/MOSFET"]
+    ESP32 --> Telegram["Bot Telegram<br/>Alertas e comandos"]
+    ESP32 --> Web["Servidor HTTP no ESP32<br/>Dashboard web de telemetria"]
 ```
 
 ---
@@ -51,22 +51,22 @@ Com os dados coletados, o ESP32 executa a lógica de decisão conforme o modo de
 
 ```mermaid
 flowchart TD
-    Start([Início do ciclo]) --> Read[Leitura dos sensores]
-    Read --> CheckMode{Modo atual?}
+    Start(["Início do ciclo"]) --> Read["Leitura dos sensores"]
+    Read --> CheckMode{"Modo atual?"}
 
-    CheckMode -->|AUTOMÁTICO| CheckWater{Reservatório OK?}
-    CheckWater -->|Não| Block[Bloqueia irrigação<br/>Envia alerta]
-    CheckWater -->|Sim| CheckSoil{Umidade < threshold?}
-    CheckSoil -->|Não| Wait[Aguarda próximo ciclo]
-    CheckSoil -->|Sim| Irrigate[Aciona bomba por tempo fixo]
-    Irrigate --> Log[Registra evento<br/>Envia notificação]
+    CheckMode -->|AUTOMÁTICO| CheckWater{"Reservatório OK?"}
+    CheckWater -->|Não| Block["Bloqueia irrigação<br/>Envia alerta"]
+    CheckWater -->|Sim| CheckSoil{"Umidade < threshold?"}
+    CheckSoil -->|Não| Wait["Aguarda próximo ciclo"]
+    CheckSoil -->|Sim| Irrigate["Aciona bomba por tempo fixo"]
+    Irrigate --> Log["Registra evento<br/>Envia notificação"]
     Log --> Wait
 
-    CheckMode -->|MANUAL| WaitCmd[Aguarda comando do usuário]
-    WaitCmd --> CheckWaterM{Reservatório OK?}
-    CheckWaterM -->|Não| BlockM[Recusa comando<br/>Envia alerta]
-    CheckWaterM -->|Sim| IrrigateM[Aciona bomba pelo tempo solicitado]
-    IrrigateM --> LogM[Registra evento]
+    CheckMode -->|MANUAL| WaitCmd["Aguarda comando do usuário"]
+    WaitCmd --> CheckWaterM{"Reservatório OK?"}
+    CheckWaterM -->|Não| BlockM["Recusa comando<br/>Envia alerta"]
+    CheckWaterM -->|Sim| IrrigateM["Aciona bomba pelo tempo solicitado"]
+    IrrigateM --> LogM["Registra evento"]
     LogM --> Wait
 
     Block --> Wait

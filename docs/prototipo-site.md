@@ -4,7 +4,7 @@
 
 A interface de controle do **SmartFlora** é uma aplicação web servida pelo próprio ESP32 do sistema de irrigação. O microcontrolador hospeda um servidor HTTP na rede Wi‑Fi local; o usuário acessa o painel pelo navegador (computador ou celular) digitando o IP do dispositivo. O dashboard é entregue diretamente a partir da memória do microcontrolador.
 
-Não há dependência de servidor externo ou banco de dados para o funcionamento básico — os arquivos da interface (`index.html`, `style.css`, `app.js`) ficam armazenados na memória do ESP32 e são entregues diretamente ao cliente. Opcionalmente, o sistema pode enviar dados para outros serviços (por exemplo, bot do Telegram), mas a visualização local é sempre garantida.
+Não há dependência de servidor externo ou banco de dados para o funcionamento básico — os arquivos da interface (`index.html`, `style.css`, `app.js`) ficam armazenados na memória do ESP32.
 
 A interface foi projetada para resolver quatro necessidades principais:
 

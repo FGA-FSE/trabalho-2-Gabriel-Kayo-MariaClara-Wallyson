@@ -14,10 +14,6 @@
         <a class="md-button" href="reproducao-esp32">Ver proposta com ESP32</a>
       </div>
     </div>
-
-    <div class="hero-image">
-      <img src="/img/logounb.png" alt="Logo UnB Gama" width="220"/>
-    </div>
   </div>
 </div>
 
@@ -109,7 +105,7 @@ O ESP32 atua como unidade de controle, acionando uma mini bomba DC e disponibili
 
 <div style={{display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "15px"}}>
 
-  <div class="photo-card leader">
+  <div class="photo-card">
     <a href="https://github.com/GabrielSMonteiro" target="_blank">
       <img src="https://avatars.githubusercontent.com/u/100171830?v=4" />
       <h4>Gabriel Monteiro<br/><small>Responsável Software / Web</small></h4>
